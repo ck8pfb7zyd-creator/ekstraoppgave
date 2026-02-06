@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator med gange</title>
+</head>
+<body>
+
+<div id="kalkulator">
+<input id="display" onchange="multiply(this.value)" value="0">
+<button onclick="multiply()">x</button>
+<button onclick="output()">=</button>
+</div>
+
+
+<script>
+
+let number = this
+
+function multiply() {
+    if (this!=0) {
+    calculate(); 
+    }
+
+    else {
+        let result = number * number2
+    output()
+    }
+}
+clearDisplay() 
+
+function output() {
+    document.getElementById('display').innerHTML = '${result}'
+}
+
+function calculate() {
+    if (number !=0) {
+        var number2
+    }
+    else {
+        multiply()
+    }
+}
+
+function clearDisplay() {
+    return ''
+}
+
+
+</script>
+
+</body>
+</html>
